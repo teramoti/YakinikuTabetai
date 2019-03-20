@@ -20,6 +20,13 @@ namespace Momoya
 
         private Collision hitObject;              //ヒットしたオブジェクト
 
+        [SerializeField] private Vector3 gravity;                  //重力
+        [SerializeField] private Vector3 gravity2;                 //重力2
+
+        private bool jumpFallFalg;
+
+        private Vector3 lastPos;
+
         //列挙型の定義
        public enum AttackState                         //攻撃用のステート
         {
@@ -34,6 +41,10 @@ namespace Momoya
             
             attackStateFlag.Off((uint)AttackState.CanAttack);       
             attackStateFlag.Off((uint)AttackState.CanNotAttack);    //アタックフラグをfalseに
+
+            jumpFallFalg = false;
+
+            lastPos = transform.position;
         }
 
         //Move関数
@@ -60,9 +71,34 @@ namespace Momoya
             GiveRarity();
 
 
+            if(!flag.Is((uint)StateFlag.Jump))
+            {
+                //重力を消す
+                GetComponent<Rigidbody>().useGravity = false;
 
+                if(!jumpFallFalg)
+                {
+                    GetComponent<Rigidbody>().AddForce(gravity, ForceMode.Acceleration);
+                }
+                else
+                {
+                    GetComponent<Rigidbody>().AddForce(gravity2, ForceMode.Acceleration);
+                }
+
+                float posY = transform.position.y - lastPos.y;
+                if(posY > 0)
+                {
+                    jumpFallFalg = true;
+                }
+
+            }
+
+            Debug.Log(vec);
 
             Jump(); //ジャンプ
+
+            //最後の座標を入れる
+            lastPos = transform.position;
 
             Debug.Log(this.rarity);
 
@@ -101,6 +137,7 @@ namespace Momoya
         //ジャンプするための関数
         private void Jump()
         {
+
             //スペースキーを押された時、地面についていればジャンプする
             if (Input.GetKeyDown(KeyCode.Space) && flag.Is((uint)StateFlag.Jump))
             {
