@@ -27,6 +27,8 @@ namespace Momoya
 
         private Vector3 lastPos;
 
+        private Animator animator;
+
         //列挙型の定義
        public enum AttackState                         //攻撃用のステート
         {
@@ -41,6 +43,8 @@ namespace Momoya
             
             attackStateFlag.Off((uint)AttackState.CanAttack);       
             attackStateFlag.Off((uint)AttackState.CanNotAttack);    //アタックフラグをfalseに
+
+            animator = GetComponent<Animator>();
 
             jumpFallFalg = false;
 
@@ -58,21 +62,24 @@ namespace Momoya
             if (Mathf.Abs(vec.x) != 0.0f)
             {
                 flag.On((uint)StateFlag.Move);
+                animator.SetBool("IsWalk", true);
             }
 
             //ベクトルxが0.0なら止まっている
             if (Mathf.Abs(vec.x) == 0.0f)
             {
                 flag.Off((uint)StateFlag.Move);
+                animator.SetBool("IsWalk", false);
             }
 
             StealRarity();
 
             GiveRarity();
 
-
+            
             if(!flag.Is((uint)StateFlag.Jump))
             {
+                animator.SetBool("IsJump", true);
                 //重力を消す
                 GetComponent<Rigidbody>().useGravity = false;
 
@@ -90,7 +97,10 @@ namespace Momoya
                 {
                     jumpFallFalg = true;
                 }
-
+            }
+            else
+            {
+                animator.SetBool("IsJump", false);
             }
 
             Debug.Log(vec);
@@ -142,6 +152,7 @@ namespace Momoya
             if (Input.GetKeyDown(KeyCode.Space) && flag.Is((uint)StateFlag.Jump))
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * jumpPower);
+                
             }
         }
 
