@@ -69,6 +69,10 @@
     <Compile Include="Assets\Scenes\Script\MonstersScript\Flag.cs" />
     <Compile Include="Assets\Scenes\Script\MonstersScript\Monster.cs" />
     <Compile Include="Assets\Scenes\Script\MonstersScript\Player.cs" />
+    <Compile Include="Assets\Scenes\Script\Okumura\AutoTileMap.cs" />
+    <Compile Include="Assets\Scenes\Script\Okumura\EditorWindow.cs" />
+    <Compile Include="Assets\Scenes\Script\Okumura\TileMap.cs" />
+    <Compile Include="Assets\Scenes\Script\Okumura\TileMapEditor.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/S172045/Documents/Star/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
