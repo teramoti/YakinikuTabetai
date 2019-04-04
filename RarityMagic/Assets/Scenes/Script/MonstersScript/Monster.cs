@@ -20,10 +20,15 @@ namespace Momoya
         //変数の宣言
         protected int rarity;     //モンスターのレアリティ
         [SerializeField]
+        protected string name;    //モンスターの名前
+        [SerializeField]
         protected int startRarity;//モンスターの初期レアリティ
         protected Vector3 startPos; //モンスターの初期位置
         protected Vector3 pos;    //モンスターのポジション
         protected Vector3 vec;    //モンスターのベクトル
+        protected int hp;         //体力
+        protected int attack;     //攻撃力
+
         protected Vector3 monsterSpeed; //モンスターのスピード
         protected Flag flag;      //フラグ
 
@@ -67,6 +72,12 @@ namespace Momoya
             Move();         //移動の処理
         }
      
+        //名前のプロパティ
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
         //レアリティをゲットとセットするためのプロパティ
         public int Rarity
         {
@@ -89,6 +100,20 @@ namespace Momoya
         {
             get { return startRarity; }
             set { startRarity = value; }
+        }
+
+        //HPのプロパティ
+        public int HP
+        {
+            get { return hp; }
+            set { hp = value; }
+        }
+
+        //Attackのプロパティ
+        public int Attack
+        {
+            get { return attack; }
+            set { attack = value; }
         }
 
         //ポジションをコントロールする関数
