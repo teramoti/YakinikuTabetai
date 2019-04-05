@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -442,10 +442,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49bcd37bf46631c4490af2bcbba404fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: 
   speed: 0
   jumpPower: 0
-  name: 
-  startRarity: 0
+  startRarity: 5
+  setHp: 109
+  setAttack: 73
+  setSpeed: 100
+  itemPos:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   gravity: {x: 0, y: 0, z: 0}
   gravity2: {x: 0, y: 0, z: 0}
 --- !u!4 &2081884094
