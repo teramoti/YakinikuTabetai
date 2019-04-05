@@ -177,6 +177,14 @@ namespace Momoya
             {
                 //アイテムのポジションを調整
                 haveItem[i].transform.position = transform.position +  itemPos[i];
+                if(vec.x <= -0.1f)
+                {
+                    //アイテムのポジションを調整
+                    haveItem[i].transform.position = transform.position + new Vector3(-itemPos[i].x, itemPos[i].y, itemPos[i].z);
+                    //アイテムのポジションを調整
+                    haveItem[i].transform.localScale = new Vector3(-haveItem[i].transform.localScale.x, haveItem[i].transform.localScale.y, haveItem[i].transform.localScale.z);
+                }
+               
             }
         }
 
