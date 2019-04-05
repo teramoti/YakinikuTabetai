@@ -11,7 +11,7 @@ namespace Momoya
     public class Player : Monster
     {
         //列挙型の定義
-        enum HaveItem
+       public enum HaveItem
         {
             Weapon, //武器
             Head,   //頭
@@ -24,7 +24,9 @@ namespace Momoya
         
 
         public  const float cooltimeCount = 0.0f; //技を出したときにクールタイムを
-        //変数の定義
+       //変数の定義
+  
+
         public Item[] haveItem = new Item[(int)HaveItem.More];
         [SerializeField]
         Vector3[] itemPos = new Vector3[(int)HaveItem.More];
@@ -63,6 +65,7 @@ namespace Momoya
             jumpFallFalg = false;
 
             lastPos = transform.position;
+
         }
 
         //Move関数
@@ -72,6 +75,8 @@ namespace Momoya
             SetItemPos();
             //プレイヤーレアリティ
             PlayerRarity();
+            //プレイヤーのステース
+            PlayerStatus();
             //十字キーの入力をセット
             vec.x = Input.GetAxis("Horizontal");
             vec.y = Input.GetAxis("Vertical");
@@ -128,7 +133,10 @@ namespace Momoya
             //最後の座標を入れる
             lastPos = transform.position;
 
-            Debug.Log(this.rarity);
+            //if (Input.GetKeyDown(KeyCode.Q))
+            //{
+            //    SavePlayer.Save(this);
+            //}
 
         }
 
@@ -184,6 +192,29 @@ namespace Momoya
             rarity = rarityCount / (int)HaveItem.More ;
             Debug.Log("PlayerRarity" + rarity);
         }
+
+        //プレイヤーのステータスを設定する
+        public void PlayerStatus()
+        {
+            ObjectStatus.Status statustmp;
+            statustmp.hp = 0;
+            statustmp.attack = 0;
+            statustmp.speed = 0;
+            //装備しているステータスの合計をステータスにする
+            for(int i = 0; i < (int)HaveItem.More; i++)
+            {
+                statustmp.hp +=  haveItem[i].HP;
+                statustmp.attack += haveItem[i].Attack;
+                statustmp.speed += haveItem[i].Speed;
+            }
+
+            status = statustmp;
+            //確認用
+            Debug.Log("HP" + status.hp);
+            Debug.Log("Attack" + status.attack);
+            Debug.Log("Speed" + status.speed);
+        }
+
         //アイテムの変更
         public void ChangeItem(Item item,int itemgroup)
         {
