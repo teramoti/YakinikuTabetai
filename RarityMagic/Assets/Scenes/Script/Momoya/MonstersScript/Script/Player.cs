@@ -103,7 +103,7 @@ namespace Momoya
                 animator.SetBool("IsJump", false);
             }
 
-            Debug.Log(vec);
+            //Debug.Log(vec);
 
             Jump(); //ジャンプ
 

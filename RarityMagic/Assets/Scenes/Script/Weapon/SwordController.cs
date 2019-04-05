@@ -4,32 +4,34 @@ using UnityEngine;
 
 public class SwordController : MonoBehaviour
 {
-    private bool attackFlag;
+    private EnemyController enemyController;
+    private SwordPivotController swordPivotController;
     // Start is called before the first frame update
     void Start()
     {
-        attackFlag = false;
+        enemyController = FindObjectOfType<EnemyController>();
+        swordPivotController = FindObjectOfType<SwordPivotController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z))
-        {
-            attackFlag = true;
-            
-        }
+        
+    }
 
-        if(attackFlag)
+    public void OnTriggerEnter(Collider other)
+    {
+        bool damageFlag = enemyController.DamageFlag;
+        bool attackFlag = swordPivotController.AttackFlag;
+        switch (other.transform.tag)
         {
-            if(transform.rotation.z >= -45)
-            {
-                transform.Rotate(new Vector3(0, 0, transform.rotation.z - 1));
-            }
-            else
-            {
-                attackFlag = false;
-            }
+            //攻撃がモンスターに当たった
+            case "Monster":
+                if(attackFlag)
+                {
+                    enemyController.DamageFlag = true;
+                }
+                break;
         }
     }
 }

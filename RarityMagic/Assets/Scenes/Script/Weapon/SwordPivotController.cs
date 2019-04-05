@@ -61,4 +61,9 @@ public class SwordPivotController : MonoBehaviour
         }
 
     }
+    public bool AttackFlag
+    {
+        get { return attackFlag; }
+        set { attackFlag = value; }
+    }
 }
