@@ -6,26 +6,18 @@ using Momoya;
 //モンスターにとって必要な情報を入れたクラス
 namespace Momoya
 {
- abstract public class Monster : MonoBehaviour
+ abstract public class Monster : Object
     {
-        //定数の宣言
-        public const int MinimumRarity = 1;         //最低限のレアリティ
-        public const int MaximumRarity = 6;         //最大限のレアリティ
-        public const int FallPoint    = -5;         //落下ポイント
+      
+
         [SerializeField]
         protected  float speed ;                       //スピード
         [SerializeField]
         protected  float jumpPower;                  //ジャンプパワー
 
-        //変数の宣言
-        protected int rarity;     //モンスターのレアリティ
-        [SerializeField]
-        protected string name;    //モンスターの名前
         [SerializeField]
         protected int startRarity;//モンスターの初期レアリティ
-        protected Vector3 startPos; //モンスターの初期位置
-        protected Vector3 pos;    //モンスターのポジション
-        protected Vector3 vec;    //モンスターのベクトル
+
         protected int hp;         //体力
         protected int attack;     //攻撃力
 
@@ -141,7 +133,7 @@ namespace Momoya
         public abstract void Move();
 
         //何かと当たった時の関数
-        protected void OnCollisionEnter(Collision collision)
+        protected void OnCollisionStay(Collision collision)
         {
             //当たった何かのタグを調べる
             switch (collision.transform.tag)
@@ -149,6 +141,7 @@ namespace Momoya
                 case "Ground": flag.On((uint)StateFlag.Jump);   break; //groundと触れていればジャンプフラグをtrueにする
             }
 
+           
         }
 
         //何かと離れたときの関数
