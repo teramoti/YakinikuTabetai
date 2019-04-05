@@ -1,9 +1,16 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 95e68fa9631ed9d44a463f2d34ce66b8
 =======
 guid: eda272e04809cb04ca9050fbe51176aa
 >>>>>>> origin/Teramoto
+=======
+guid: eda272e04809cb04ca9050fbe51176aa
+=======
+guid: 95e68fa9631ed9d44a463f2d34ce66b8
+>>>>>>> e9600a16b84dc6d67338d2f6e93098645156e987
+>>>>>>> 168220adf3720fbad4b7b2922f46a9c8b6947e16
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
