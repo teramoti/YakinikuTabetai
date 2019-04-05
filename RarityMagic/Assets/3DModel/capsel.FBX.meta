@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8a659da950dd02645b4e480da2253fba
+=======
+guid: c30aba6b55aede444bb5dd5572bafb88
+>>>>>>> origin/Teramoto
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:

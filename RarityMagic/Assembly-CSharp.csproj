@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Scenes\Script\AttackZone.cs" />
     <Compile Include="Assets\Scenes\Script\GameObject\Goal.cs" />
     <Compile Include="Assets\Scenes\Script\GameObject\OneupStar.cs" />
@@ -78,6 +79,25 @@
     <Compile Include="Assets\Scenes\Script\Okumura\TileMap.cs" />
     <Compile Include="Assets\Scenes\Script\Okumura\TileMapEditor.cs" />
     <Compile Include="Assets\Scenes\Script\Teramoto\Title.cs" />
+=======
+    <Compile Include="Assets\Scenes\Data\Script\AttackZone.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\GameObject\Goal.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\GameObject\OneupStar.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Momoya\SavePlayer.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\MonstersScript\bat.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\MonstersScript\Flag.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\MonstersScript\Monster.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\MonstersScript\Player.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Okumura\AutoTileMap.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Okumura\AutoTileMapEditor.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Okumura\EditorWindow.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Okumura\TileMap.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Okumura\TileMapEditor.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Teramoto\CapselMove.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Teramoto\GachaHandle.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Teramoto\Title.cs" />
+    <Compile Include="Assets\Scenes\Data\Script\Teramoto\TitleUiMove.cs" />
+>>>>>>> origin/Teramoto
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/s172091/Desktop/作業用フォルダ/ソースツリー/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
