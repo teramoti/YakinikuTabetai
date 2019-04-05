@@ -76,28 +76,7 @@ namespace Momoya
             Move();         //移動の処理
         }
      
-        //名前のプロパティ
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-        //レアリティをゲットとセットするためのプロパティ
-        public int Rarity
-        {
-            get { return this.rarity; }
-            set
-            {
-                //レアリティの最小値のチェック
-                if (value < MinimumRarity)
-                {
-                    Debug.Log("想定されていたレアリティより低い数値を渡されました");
-                    value = MinimumRarity;//レアリティを設定されている数値に変える
-                }
-                rarity = value;
-            }
-
-        }
+        
 
         //一番最初のレアリティをゲットとセットするプロパティ
         public int StartRarity
