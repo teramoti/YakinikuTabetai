@@ -10,10 +10,24 @@ namespace Momoya
 
     public class Player : Monster
     {
+        //列挙型の定義
+        enum HaveItem
+        {
+            Weapon, //武器
+            Head,   //頭
+            Body,    //体
+
+            More,
+        }
 
         //定数の定義
+        
+
         public  const float cooltimeCount = 0.0f; //技を出したときにクールタイムを
         //変数の定義
+        public Item[] haveItem = new Item[(int)HaveItem.More];
+        [SerializeField]
+        Vector3[] itemPos = new Vector3[(int)HaveItem.More];
         private float cooltime;                   //クールタイムをカウントする
        
         private Flag attackStateFlag;             //攻撃時のフラグ
@@ -54,6 +68,10 @@ namespace Momoya
         //Move関数
         public override void Move()
         {
+            //アイテムのポジション設定
+            SetItemPos();
+            //プレイヤーレアリティ
+            PlayerRarity();
             //十字キーの入力をセット
             vec.x = Input.GetAxis("Horizontal");
             vec.y = Input.GetAxis("Vertical");
@@ -143,6 +161,35 @@ namespace Momoya
                 }
             }
         }
+
+        //アイテムのポジション設定
+        public void SetItemPos()
+        {
+            for(int i= 0; i < (int)HaveItem.More; i++)
+            {
+                //アイテムのポジションを調整
+                haveItem[i].transform.position = transform.position +  itemPos[i];
+            }
+        }
+
+        //プレイヤーのレアリティを決める
+        public void PlayerRarity()
+        {
+            int rarityCount = 0;
+            for (int i = 0; i < (int)HaveItem.More; i++)
+            {
+                rarityCount += haveItem[i].Rarity;
+            }
+
+            rarity = rarityCount / (int)HaveItem.More ;
+            Debug.Log("PlayerRarity" + rarity);
+        }
+        //アイテムの変更
+        public void ChangeItem(Item item,int itemgroup)
+        {
+            haveItem[(int)itemgroup] = item;
+        }
+
 
         //ジャンプするための関数
         private void Jump()

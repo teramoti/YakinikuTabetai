@@ -27,6 +27,7 @@ namespace Momoya
             Rarity,//レアリティ
             HP,    //体力
             Attack,//攻撃力
+            Speed, //スピード
             Weapon,//武器
             Head,  //頭
             Body  //体
@@ -70,12 +71,12 @@ namespace Momoya
             StreamWriter sw = new StreamWriter(filePath, false, Encoding.GetEncoding("Unicode"));
             // データ出力
 
-           
-                //名前を書きこむ
-                string[] name = { "Name", "" + monster.Name };
-                string namewrite = string.Join(",", name);
-                sw.WriteLine(namewrite);
-                //レアリティを書き込む
+
+            //名前を書き込む
+             string[] name = { "Name", "" + monster.Name.ToString() };
+             string namewriter = string.Join(",", name);
+             sw.WriteLine(namewriter);
+               //レアリティを書き込む
                 string[] rarity = { "Rarity", "" + monster.Rarity.ToString() };
                 string raritywrite = string.Join(",", rarity);
                 sw.WriteLine(raritywrite);
@@ -87,8 +88,12 @@ namespace Momoya
                 string[] attack = { "Attack", "" + monster.Attack.ToString() };
                 string attackwrite = string.Join(",", attack);
                 sw.WriteLine(attackwrite);
-                //武器を書き込む
-                string[] weapon = { "Weapon", "" + "None" };
+                //スピードを書き込む
+                string[] speed = { "Speed", "" + monster.Speed.ToString() };
+                string sppedwriter = string.Join(",", speed);
+                sw.WriteLine(sppedwriter);
+              //武器を書き込む
+              string[] weapon = { "Weapon", "" + "None" };
                 string weaponwrite = string.Join(",", weapon);
                 sw.WriteLine(weaponwrite);
                //装備(頭)を書き込む
@@ -122,11 +127,15 @@ namespace Momoya
             Int32.TryParse(_csvData[(int)PlayerData.Attack], out tmp); //攻撃力
             monster.Attack = tmp;//int型に変換したものを入れる
 
+            Int32.TryParse(_csvData[(int)PlayerData.Speed], out tmp);
+            monster.Speed = tmp;
+
             //確認用
             Debug.Log("Name" + monster.Name);
             Debug.Log("Rarity" + monster.Rarity);
             Debug.Log("HP" + monster.HP);
             Debug.Log("Attack" + monster.Attack);
+            Debug.Log("Speed" + monster.Speed);
             //武器はでき次第追加で書く
         }
 
@@ -141,7 +150,7 @@ namespace Momoya
             {
                 //データ内のいらない文字列を飛ばす
                 if (text != "Name" && text != "Rarity" &&
-                    text != "HP" && text != "Attack" &&
+                    text != "HP" && text != "Attack" && text != "Speed" &&
                     text != "Weapon" && text != "Head" && text != "Body")
                 {
                     _csvData.Add(text); //カンマ区切りでデータを取得

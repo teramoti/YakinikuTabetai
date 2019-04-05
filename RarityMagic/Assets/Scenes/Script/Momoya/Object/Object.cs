@@ -28,7 +28,44 @@ namespace Momoya
         // Update is called once per frame
         void Update()
         {
+          //pos = transform.position;
+        }
+
+        //ポジションのプロパティ
+        public Vector3 Pos
+        {
+            get { return pos; }
+            set { pos = value; }
+        }
+        //ベクトルのプロパティ
+        public Vector3 Vec
+        {
+            get { return vec; }
+            set { vec = value; }
+        }
+
+        //名前のプロパティ
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        //レアリティをゲットとセットするためのプロパティ
+        public int Rarity
+        {
+            get { return this.rarity; }
+            set
+            {
+                //レアリティの最小値のチェック
+                if (value < MinimumRarity)
+                {
+                    Debug.Log("想定されていたレアリティより低い数値を渡されました");
+                    value = MinimumRarity;//レアリティを設定されている数値に変える
+                }
+                rarity = value;
+            }
 
         }
+
     }
 }
