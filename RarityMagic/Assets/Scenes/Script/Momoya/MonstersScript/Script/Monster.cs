@@ -10,6 +10,8 @@ namespace Momoya
     {
       
 
+        //変数の宣言
+
         [SerializeField]
         protected  float speed ;                       //スピード
         [SerializeField]
@@ -17,9 +19,13 @@ namespace Momoya
 
         [SerializeField]
         protected int startRarity;//モンスターの初期レアリティ
-
-        protected int hp;         //体力
-        protected int attack;     //攻撃力
+        [SerializeField]
+        protected int setHp = 10;    //ステータス用のhp
+        [SerializeField]
+        protected int setAttack = 10;//ステータス用の攻撃
+        [SerializeField]
+        protected int setSpeed = 10; //ステータス用のスピード
+        protected ObjectStatus.Status status;
 
         protected Vector3 monsterSpeed; //モンスターのスピード
         protected Flag flag;      //フラグ
@@ -31,7 +37,11 @@ namespace Momoya
             Move = (1 << 0),  //移動フラグ
             Jump = (1 << 1),  //ジャンプフラグ
             Deth = (1 << 2),  //死亡フラグ
+<<<<<<< HEAD
             Chase= (1 << 3),  //追いかけるフラグ
+=======
+
+>>>>>>> 1154b54b8a1daea40ad45954ec36bead8bf921dd
         }
 
         protected enum MonsterState
@@ -50,6 +60,11 @@ namespace Momoya
             this.vec = this.GetComponent<Rigidbody>().velocity;
 
             this.flag = GetComponent<Flag>();
+            //ステータスをセット
+            status.hp = setHp;
+            status.attack = setAttack;
+            status.speed  = setSpeed;
+            
             //初期化処理(子クラス用)
             Initialize();
 
@@ -65,28 +80,7 @@ namespace Momoya
             Move();         //移動の処理
         }
      
-        //名前のプロパティ
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-        //レアリティをゲットとセットするためのプロパティ
-        public int Rarity
-        {
-            get { return this.rarity; }
-            set
-            {
-                //レアリティの最小値のチェック
-                if (value < MinimumRarity)
-                {
-                    Debug.Log("想定されていたレアリティより低い数値を渡されました");
-                    value = MinimumRarity;//レアリティを設定されている数値に変える
-                }
-                rarity = value;
-            }
-
-        }
+        
 
         //一番最初のレアリティをゲットとセットするプロパティ
         public int StartRarity
@@ -98,15 +92,22 @@ namespace Momoya
         //HPのプロパティ
         public int HP
         {
-            get { return hp; }
-            set { hp = value; }
+            get { return status.hp; }
+            set { status.hp = value; }
         }
 
         //Attackのプロパティ
         public int Attack
         {
-            get { return attack; }
-            set { attack = value; }
+            get { return status.attack; }
+            set { status.attack = value; }
+        }
+
+        //Speedのプロパティ
+        public int Speed
+        {
+            get { return status.speed; }
+            set { status.speed = value; }
         }
 
         //ポジションをコントロールする関数

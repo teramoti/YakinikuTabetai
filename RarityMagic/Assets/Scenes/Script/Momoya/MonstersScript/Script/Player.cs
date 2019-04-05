@@ -10,10 +10,26 @@ namespace Momoya
 
     public class Player : Monster
     {
+        //列挙型の定義
+       public enum HaveItem
+        {
+            Weapon, //武器
+            Head,   //頭
+            Body,    //体
+
+            More,
+        }
 
         //定数の定義
+        
+
         public  const float cooltimeCount = 0.0f; //技を出したときにクールタイムを
-        //変数の定義
+       //変数の定義
+  
+
+        public Item[] haveItem = new Item[(int)HaveItem.More];
+        [SerializeField]
+        Vector3[] itemPos = new Vector3[(int)HaveItem.More];
         private float cooltime;                   //クールタイムをカウントする
        
         private Flag attackStateFlag;             //攻撃時のフラグ
@@ -49,11 +65,18 @@ namespace Momoya
             jumpFallFalg = false;
 
             lastPos = transform.position;
+
         }
 
         //Move関数
         public override void Move()
         {
+            //アイテムのポジション設定
+            SetItemPos();
+            //プレイヤーレアリティ
+            PlayerRarity();
+            //プレイヤーのステース
+            PlayerStatus();
             //十字キーの入力をセット
             vec.x = Input.GetAxis("Horizontal");
             vec.y = Input.GetAxis("Vertical");
@@ -110,10 +133,13 @@ namespace Momoya
             //最後の座標を入れる
             lastPos = transform.position;
 
-            Debug.Log(this.rarity);
+            //if (Input.GetKeyDown(KeyCode.Q))
+            //{
+            //    SavePlayer.Save(this);
+            //}
 
         }
-        
+
         //レアリティを奪う関数
         private void StealRarity()
         {
@@ -122,9 +148,9 @@ namespace Momoya
                 if (GetComponentInChildren<AttackZone>().HitFlag)
                 {
                     //当たっているオブジェクトのレアリティを下げ自分のレアリティを上げる
-                    hitObject.gameObject.GetComponent<Monster>().Rarity = hitObject.gameObject.GetComponent<Monster>().Rarity - 1;
+                    hitObject.gameObject.GetComponent<Object>().Rarity = hitObject.gameObject.GetComponent<Monster>().Rarity - 1;
                     this.rarity += 1;
-                  
+
 
                 }
             }
@@ -143,6 +169,66 @@ namespace Momoya
                 }
             }
         }
+
+        //アイテムのポジション設定
+        public void SetItemPos()
+        {
+            for(int i= 0; i < (int)HaveItem.More; i++)
+            {
+                //アイテムのポジションを調整
+                haveItem[i].transform.position = transform.position +  itemPos[i];
+                if(vec.x <= -0.1f)
+                {
+                    //アイテムのポジションを調整
+                    haveItem[i].transform.position = transform.position + new Vector3(-itemPos[i].x, itemPos[i].y, itemPos[i].z);
+                    //アイテムのポジションを調整
+                    haveItem[i].transform.localScale = new Vector3(-haveItem[i].transform.localScale.x, haveItem[i].transform.localScale.y, haveItem[i].transform.localScale.z);
+                }
+               
+            }
+        }
+
+        //プレイヤーのレアリティを決める
+        public void PlayerRarity()
+        {
+            int rarityCount = 0;
+            for (int i = 0; i < (int)HaveItem.More; i++)
+            {
+                rarityCount += haveItem[i].Rarity;
+            }
+
+            rarity = rarityCount / (int)HaveItem.More ;
+            Debug.Log("PlayerRarity" + rarity);
+        }
+
+        //プレイヤーのステータスを設定する
+        public void PlayerStatus()
+        {
+            ObjectStatus.Status statustmp;
+            statustmp.hp = 0;
+            statustmp.attack = 0;
+            statustmp.speed = 0;
+            //装備しているステータスの合計をステータスにする
+            for(int i = 0; i < (int)HaveItem.More; i++)
+            {
+                statustmp.hp +=  haveItem[i].HP;
+                statustmp.attack += haveItem[i].Attack;
+                statustmp.speed += haveItem[i].Speed;
+            }
+
+            status = statustmp;
+            //確認用
+            Debug.Log("HP" + status.hp);
+            Debug.Log("Attack" + status.attack);
+            Debug.Log("Speed" + status.speed);
+        }
+
+        //アイテムの変更
+        public void ChangeItem(Item item,int itemgroup)
+        {
+            haveItem[(int)itemgroup] = item;
+        }
+
 
         //ジャンプするための関数
         private void Jump()
