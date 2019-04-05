@@ -64,16 +64,26 @@
     <Compile Include="Assets\Scenes\Script\AttackZone.cs" />
     <Compile Include="Assets\Scenes\Script\GameObject\Goal.cs" />
     <Compile Include="Assets\Scenes\Script\GameObject\OneupStar.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scenes\Script\MonstersScript\bat.cs" />
     <Compile Include="Assets\Scenes\Script\MonstersScript\EnemyController.cs" />
     <Compile Include="Assets\Scenes\Script\MonstersScript\Flag.cs" />
     <Compile Include="Assets\Scenes\Script\MonstersScript\Monster.cs" />
     <Compile Include="Assets\Scenes\Script\MonstersScript\Player.cs" />
+=======
+    <Compile Include="Assets\Scenes\Script\Momoya\DataScript\SavePlayer.cs" />
+    <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\bat.cs" />
+    <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\Flag.cs" />
+    <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\Monster.cs" />
+    <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\Player.cs" />
+    <Compile Include="Assets\Scenes\Script\Momoya\Object\Object.cs" />
+>>>>>>> f3ae6f4bb62b96edd45b542a737ac3600d0948ba
     <Compile Include="Assets\Scenes\Script\Okumura\AutoTileMap.cs" />
     <Compile Include="Assets\Scenes\Script\Okumura\AutoTileMapEditor.cs" />
     <Compile Include="Assets\Scenes\Script\Okumura\EditorWindow.cs" />
     <Compile Include="Assets\Scenes\Script\Okumura\TileMap.cs" />
     <Compile Include="Assets\Scenes\Script\Okumura\TileMapEditor.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scenes\Script\Weapon\BulletController.cs" />
     <Compile Include="Assets\Scenes\Script\Weapon\GunController.cs" />
     <Compile Include="Assets\Scenes\Script\Weapon\PivotController.cs" />
@@ -93,6 +103,39 @@
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+=======
+    <Compile Include="Assets\Scenes\Script\Teramoto\Title.cs" />
+    <Reference Include="Unity.TextMeshPro.Editor">
+<<<<<<< HEAD
+      <HintPath>C:/Users/s172137/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/s172137/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/s172137/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/s172137/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Users/s172137/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+=======
+      <HintPath>C:/Users/s172091/Desktop/作業用フォルダ/ソースツリー/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/s172091/Desktop/作業用フォルダ/ソースツリー/RarityMagic/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/s172091/Desktop/作業用フォルダ/ソースツリー/RarityMagic/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/s172091/Desktop/作業用フォルダ/ソースツリー/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Users/s172091/Desktop/作業用フォルダ/ソースツリー/RarityMagic/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+>>>>>>> Momoya
+>>>>>>> f3ae6f4bb62b96edd45b542a737ac3600d0948ba
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -273,6 +316,7 @@
     </Reference>
     <Reference Include="Unity.Locator">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+<<<<<<< HEAD
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -303,6 +347,27 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+=======
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+<<<<<<< HEAD
+      <HintPath>C:/Users/s172137/Documents/YakinikuTabetai/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>C:/Users/s172137/Documents/YakinikuTabetai/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>C:/Users/s172137/Documents/YakinikuTabetai/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+=======
+      <HintPath>C:/Users/s172091/Desktop/作業用フォルダ/ソースツリー/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>C:/Users/s172091/Desktop/作業用フォルダ/ソースツリー/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>C:/Users/s172091/Desktop/作業用フォルダ/ソースツリー/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+>>>>>>> Momoya
+>>>>>>> f3ae6f4bb62b96edd45b542a737ac3600d0948ba
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
