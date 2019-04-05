@@ -37,18 +37,15 @@ namespace Momoya
             Move = (1 << 0),  //移動フラグ
             Jump = (1 << 1),  //ジャンプフラグ
             Deth = (1 << 2),  //死亡フラグ
-<<<<<<< HEAD
-            Chase= (1 << 3),  //追いかけるフラグ
-=======
+            Chase = (1 << 3), //追うフラグ
 
->>>>>>> 1154b54b8a1daea40ad45954ec36bead8bf921dd
         }
 
         protected enum MonsterState
         {
             Normal, //普通の状態
             Jump  , //ジャンプ状態
-            Chase ,//追いかけてる状態
+
             NumState,
         }
 
@@ -118,7 +115,6 @@ namespace Momoya
             //移動させる
             GetComponent<Rigidbody>().velocity = new Vector3(direction.x, GetComponent<Rigidbody>().velocity.y, direction.z);
 
-            //下に落ちたら
             if(transform.position.y < FallPoint)
             {
                 this.transform.position = startPos;

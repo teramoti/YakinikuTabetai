@@ -67,13 +67,6 @@
     <Compile Include="Assets\Scenes\Script\Momoya\DataScript\SavePlayer.cs" />
     <Compile Include="Assets\Scenes\Script\Momoya\ItemScript\Item\Item.cs" />
     <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\bat.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\EnemyAttackZone.cs" />
-    <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\EnemyController.cs" />
-    <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\EnemyVision.cs" />
-    <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\Flag.cs" />
-=======
->>>>>>> 1154b54b8a1daea40ad45954ec36bead8bf921dd
     <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\Monster.cs" />
     <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\Player.cs" />
     <Compile Include="Assets\Scenes\Script\Momoya\Object\Flag.cs" />
@@ -86,26 +79,14 @@
     <Compile Include="Assets\Scenes\Script\Okumura\TileMapEditor.cs" />
     <Compile Include="Assets\Scenes\Script\Teramoto\Title.cs" />
     <Compile Include="Assets\Scenes\Script\Weapon\BulletController.cs" />
+    <Compile Include="Assets\Scenes\Script\Weapon\EnemyAttackZone.cs" />
+    <Compile Include="Assets\Scenes\Script\Weapon\EnemyController.cs" />
+    <Compile Include="Assets\Scenes\Script\Weapon\EnemyVision.cs" />
     <Compile Include="Assets\Scenes\Script\Weapon\GunController.cs" />
     <Compile Include="Assets\Scenes\Script\Weapon\PivotController.cs" />
     <Compile Include="Assets\Scenes\Script\Weapon\SwordController.cs" />
     <Compile Include="Assets\Scenes\Script\Weapon\SwordPivotController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-<<<<<<< HEAD
-      <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-=======
       <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
@@ -114,18 +95,17 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/RarityMagic/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/RarityMagic/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
->>>>>>> 1154b54b8a1daea40ad45954ec36bead8bf921dd
-    </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/RarityMagic/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/RarityMagic/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/RarityMagic/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/RarityMagic/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -307,16 +287,6 @@
     <Reference Include="Unity.Locator">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/s172126/Documents/YakinikuTabetai/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-=======
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -346,7 +316,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/RarityMagic/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
->>>>>>> 1154b54b8a1daea40ad45954ec36bead8bf921dd
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
@@ -377,14 +346,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VisualEffectGraph.Runtime.csproj">
-      <Project>{9D626037-1CE2-704B-D21B-9378C82910EA}</Project>
-      <Name>Unity.VisualEffectGraph.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualEffectGraph.Editor.csproj">
-      <Project>{FDB58449-F44A-7A93-5DEA-F34D4D2A2864}</Project>
-      <Name>Unity.VisualEffectGraph.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
       <Project>{6CD98120-0AF6-7056-81B1-773201B7B133}</Project>
       <Name>Unity.RenderPipelines.Core.Editor</Name>
@@ -392,6 +353,10 @@
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
       <Project>{3C51D21B-51BE-3766-5ECA-A65DF29AFCDD}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualEffectGraph.Runtime.csproj">
+      <Project>{9D626037-1CE2-704B-D21B-9378C82910EA}</Project>
+      <Name>Unity.VisualEffectGraph.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Lightweight.Runtime.csproj">
       <Project>{F769A416-1216-1DDA-A57D-3820F6082049}</Project>
@@ -404,6 +369,10 @@
     <ProjectReference Include="Unity.RenderPipelines.HighDefinition.Runtime.csproj">
       <Project>{021F1635-E817-FF05-B987-C75931666571}</Project>
       <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualEffectGraph.Editor.csproj">
+      <Project>{FDB58449-F44A-7A93-5DEA-F34D4D2A2864}</Project>
+      <Name>Unity.VisualEffectGraph.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ShaderGraph.Editor.csproj">
       <Project>{38E57083-D2CC-CA23-E374-399023AF4F68}</Project>
