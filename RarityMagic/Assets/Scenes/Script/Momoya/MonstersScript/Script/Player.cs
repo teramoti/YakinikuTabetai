@@ -113,7 +113,7 @@ namespace Momoya
             Debug.Log(this.rarity);
 
         }
-        
+
         //レアリティを奪う関数
         private void StealRarity()
         {
@@ -122,9 +122,9 @@ namespace Momoya
                 if (GetComponentInChildren<AttackZone>().HitFlag)
                 {
                     //当たっているオブジェクトのレアリティを下げ自分のレアリティを上げる
-                    hitObject.gameObject.GetComponent<Monster>().Rarity = hitObject.gameObject.GetComponent<Monster>().Rarity - 1;
+                    hitObject.gameObject.GetComponent<Object>().Rarity = hitObject.gameObject.GetComponent<Monster>().Rarity - 1;
                     this.rarity += 1;
-                  
+
 
                 }
             }
