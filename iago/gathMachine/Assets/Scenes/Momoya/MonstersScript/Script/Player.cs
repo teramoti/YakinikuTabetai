@@ -45,6 +45,8 @@ namespace Momoya
         private Vector3 lastPos;
 
         private Animator animator;
+        private bool directionFlag;     //左右向き
+        public float scale;
 
         //列挙型の定義
        public enum AttackState                         //攻撃用のステート
@@ -67,6 +69,8 @@ namespace Momoya
 
             lastPos = transform.position;
 
+            directionFlag = false;
+
             //装備しているステータスの合計をステータスにする
             for (int i = 0; i < (int)HaveItem.More; i++)
             {
@@ -86,6 +90,25 @@ namespace Momoya
             //十字キーの入力をセット
             vec.x = Input.GetAxis("Horizontal");
             vec.y = Input.GetAxis("Vertical");
+
+            if(Input.GetKey(KeyCode.RightArrow))
+            {
+                directionFlag = false;
+            }
+            if(Input.GetKey(KeyCode.LeftArrow))
+            {
+                directionFlag = true;
+            }
+
+            float scaleX = scale;
+            if (!directionFlag)
+            {
+                transform.localScale = new Vector3(scaleX, transform.localScale.y, transform.localScale.z);
+            }
+            else
+            {
+                transform.localScale = new Vector3(-scaleX, transform.localScale.y, transform.localScale.z);
+            }
 
             //ベクトルxが0.0じゃない場合動いている
             if (Mathf.Abs(vec.x) != 0.0f)
@@ -114,6 +137,7 @@ namespace Momoya
 
                 if(!jumpFallFalg)
                 {
+                    
                     GetComponent<Rigidbody>().AddForce(gravity, ForceMode.Acceleration);
                 }
                 else
@@ -125,11 +149,13 @@ namespace Momoya
                 if(posY > 0)
                 {
                     jumpFallFalg = true;
+                    animator.SetBool("IsJumpDown", true);
                 }
             }
             else
             {
                 animator.SetBool("IsJump", false);
+                animator.SetBool("IsJumpDown", false);
             }
 
          //   Debug.Log(vec);

@@ -37,14 +37,14 @@ namespace Momoya
             Move = (1 << 0),  //移動フラグ
             Jump = (1 << 1),  //ジャンプフラグ
             Deth = (1 << 2),  //死亡フラグ
-
+            Chase =(1 << 3),  //追いかける
         }
 
         protected enum MonsterState
         {
             Normal, //普通の状態
             Jump  , //ジャンプ状態
-
+            Chase,  //追いかける
             NumState,
         }
 
