@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.HighDefinition.Runtime", "Unity.RenderPipelines.HighDefinition.Runtime.csproj", "{021F1635-E817-FF05-B987-C75931666571}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Lightweight.Runtime", "Unity.RenderPipelines.Lightweight.Runtime.csproj", "{F769A416-1216-1DDA-A57D-3820F6082049}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{0E270C06-7298-5F04-6494-B9FD89AF9FB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Core.Runtime", "Unity.RenderPipelines.Core.Runtime.csproj", "{3C51D21B-51BE-3766-5ECA-A65DF29AFCDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualEffectGraph.Runtime", "Unity.VisualEffectGraph.Runtime.csproj", "{9D626037-1CE2-704B-D21B-9378C82910EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Core.ShaderLibrary", "Unity.RenderPipelines.Core.ShaderLibrary.csproj", "{5BE3CD06-F7C9-9CDC-469B-A86A332B7507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ShaderGraph.Editor", "Unity.ShaderGraph.Editor.csproj", "{38E57083-D2CC-CA23-E374-399023AF4F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualEffectGraph.Editor", "Unity.VisualEffectGraph.Editor.csproj", "{FDB58449-F44A-7A93-5DEA-F34D4D2A2864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.HighDefinition.Editor", "Unity.RenderPipelines.HighDefinition.Editor.csproj", "{94E8BC6B-CA8A-0C1B-EC27-15CBB70F9EE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Lightweight.Editor", "Unity.RenderPipelines.Lightweight.Editor.csproj", "{ECF87A18-22F2-851F-AA15-FA441A536803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Core.Editor", "Unity.RenderPipelines.Core.Editor.csproj", "{6CD98120-0AF6-7056-81B1-773201B7B133}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{021F1635-E817-FF05-B987-C75931666571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021F1635-E817-FF05-B987-C75931666571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021F1635-E817-FF05-B987-C75931666571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021F1635-E817-FF05-B987-C75931666571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F769A416-1216-1DDA-A57D-3820F6082049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F769A416-1216-1DDA-A57D-3820F6082049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F769A416-1216-1DDA-A57D-3820F6082049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F769A416-1216-1DDA-A57D-3820F6082049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E270C06-7298-5F04-6494-B9FD89AF9FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E270C06-7298-5F04-6494-B9FD89AF9FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E270C06-7298-5F04-6494-B9FD89AF9FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E270C06-7298-5F04-6494-B9FD89AF9FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C51D21B-51BE-3766-5ECA-A65DF29AFCDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C51D21B-51BE-3766-5ECA-A65DF29AFCDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C51D21B-51BE-3766-5ECA-A65DF29AFCDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C51D21B-51BE-3766-5ECA-A65DF29AFCDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D626037-1CE2-704B-D21B-9378C82910EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D626037-1CE2-704B-D21B-9378C82910EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D626037-1CE2-704B-D21B-9378C82910EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D626037-1CE2-704B-D21B-9378C82910EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BE3CD06-F7C9-9CDC-469B-A86A332B7507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE3CD06-F7C9-9CDC-469B-A86A332B7507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE3CD06-F7C9-9CDC-469B-A86A332B7507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE3CD06-F7C9-9CDC-469B-A86A332B7507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E57083-D2CC-CA23-E374-399023AF4F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E57083-D2CC-CA23-E374-399023AF4F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E57083-D2CC-CA23-E374-399023AF4F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E57083-D2CC-CA23-E374-399023AF4F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB58449-F44A-7A93-5DEA-F34D4D2A2864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB58449-F44A-7A93-5DEA-F34D4D2A2864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB58449-F44A-7A93-5DEA-F34D4D2A2864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB58449-F44A-7A93-5DEA-F34D4D2A2864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E8BC6B-CA8A-0C1B-EC27-15CBB70F9EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E8BC6B-CA8A-0C1B-EC27-15CBB70F9EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E8BC6B-CA8A-0C1B-EC27-15CBB70F9EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E8BC6B-CA8A-0C1B-EC27-15CBB70F9EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF87A18-22F2-851F-AA15-FA441A536803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF87A18-22F2-851F-AA15-FA441A536803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF87A18-22F2-851F-AA15-FA441A536803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF87A18-22F2-851F-AA15-FA441A536803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD98120-0AF6-7056-81B1-773201B7B133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD98120-0AF6-7056-81B1-773201B7B133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD98120-0AF6-7056-81B1-773201B7B133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD98120-0AF6-7056-81B1-773201B7B133}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
