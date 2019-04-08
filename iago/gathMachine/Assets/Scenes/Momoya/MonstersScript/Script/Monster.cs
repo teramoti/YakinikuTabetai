@@ -38,6 +38,7 @@ namespace Momoya
             Jump = (1 << 1),  //ジャンプフラグ
             Deth = (1 << 2),  //死亡フラグ
             Goal = (1 << 3),  //ゴールフラグ
+            Finish = (1 << 4), //終了
 
         }
 
@@ -52,7 +53,7 @@ namespace Momoya
         // Use this for initialization
         void Start()
         {
-            rarity = startRarity; //初期レアリティをセット
+           // 
             this.startPos = this.transform.position;
             this.vec = this.GetComponent<Rigidbody>().velocity;
 
@@ -154,6 +155,11 @@ namespace Momoya
             }
         }
 
+        public bool GoalFlag()
+        {
+            return flag.Is((uint)StateFlag.Goal
+                );
+        }
     }
 
 }

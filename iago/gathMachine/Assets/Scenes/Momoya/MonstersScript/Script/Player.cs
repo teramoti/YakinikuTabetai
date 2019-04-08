@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 //プレイヤーのスクリプト
 
@@ -20,6 +20,14 @@ namespace Momoya
 
             More,
         }
+        public enum Mode
+        {
+            Play,
+            Result,
+
+            More
+        }
+
 
         //定数の定義
         
@@ -45,6 +53,8 @@ namespace Momoya
         private Vector3 lastPos;
 
         private Animator animator;
+        [SerializeField]
+        private  Mode mode;
 
         //列挙型の定義
        public enum AttackState                         //攻撃用のステート
@@ -66,88 +76,100 @@ namespace Momoya
             jumpFallFalg = false;
 
             lastPos = transform.position;
-
-            //装備しているステータスの合計をステータスにする
-            for (int i = 0; i < (int)HaveItem.More; i++)
+            if(mode == Mode.Play)
             {
-                haveItem[i].SetStatus();
+              //  rarity = startRarity; //初期レアリティをセット
+                                      //装備しているステータスの合計をステータスにする
+                for (int i = 0; i < (int)HaveItem.More; i++)
+                {
+                    haveItem[i].SetStatus();
+                }
             }
+
+          
         }
 
         //Move関数
         public override void Move()
         {
-            if(flag.Is((uint)StateFlag.Goal))
+            if (mode == Mode.Play)
             {
-                return;
-            }
-            //アイテムのポジション設定
-            SetItemPos();
-            //プレイヤーレアリティ
-            PlayerRarity();
-            //プレイヤーのステース
-            PlayerStatus();
-            //十字キーの入力をセット
-            vec.x = Input.GetAxis("Horizontal");
-            vec.y = Input.GetAxis("Vertical");
-
-            //ベクトルxが0.0じゃない場合動いている
-            if (Mathf.Abs(vec.x) != 0.0f)
-            {
-                flag.On((uint)StateFlag.Move);
-                animator.SetBool("IsWalk", true);
-            }
-
-            //ベクトルxが0.0なら止まっている
-            if (Mathf.Abs(vec.x) == 0.0f)
-            {
-                flag.Off((uint)StateFlag.Move);
-                animator.SetBool("IsWalk", false);
-            }
-
-            StealRarity();
-
-            GiveRarity();
-
-            
-            if(!flag.Is((uint)StateFlag.Jump))
-            {
-                animator.SetBool("IsJump", true);
-                //重力を消す
-                GetComponent<Rigidbody>().useGravity = false;
-
-                if(!jumpFallFalg)
+                if (flag.Is((uint)StateFlag.Goal))
                 {
-                    GetComponent<Rigidbody>().AddForce(gravity, ForceMode.Acceleration);
+                    SceneManager.LoadScene("Result");
+                    return;
+                }
+                //アイテムのポジション設定
+                SetItemPos();
+                //プレイヤーレアリティ
+                PlayerRarity();
+                //プレイヤーのステース
+                PlayerStatus();
+                //十字キーの入力をセット
+                vec.x = Input.GetAxis("Horizontal");
+                vec.y = Input.GetAxis("Vertical");
+
+                //ベクトルxが0.0じゃない場合動いている
+                if (Mathf.Abs(vec.x) != 0.0f)
+                {
+                    flag.On((uint)StateFlag.Move);
+                    animator.SetBool("IsWalk", true);
+                }
+
+                //ベクトルxが0.0なら止まっている
+                if (Mathf.Abs(vec.x) == 0.0f)
+                {
+                    flag.Off((uint)StateFlag.Move);
+                    animator.SetBool("IsWalk", false);
+                }
+
+                StealRarity();
+
+                GiveRarity();
+
+
+                if (!flag.Is((uint)StateFlag.Jump))
+                {
+                    animator.SetBool("IsJump", true);
+                    //重力を消す
+                    GetComponent<Rigidbody>().useGravity = false;
+
+                    if (!jumpFallFalg)
+                    {
+                        GetComponent<Rigidbody>().AddForce(gravity, ForceMode.Acceleration);
+                    }
+                    else
+                    {
+                        GetComponent<Rigidbody>().AddForce(gravity2, ForceMode.Acceleration);
+                    }
+
+                    float posY = transform.position.y - lastPos.y;
+                    if (posY > 0)
+                    {
+                        jumpFallFalg = true;
+                    }
                 }
                 else
                 {
-                    GetComponent<Rigidbody>().AddForce(gravity2, ForceMode.Acceleration);
+                    animator.SetBool("IsJump", false);
                 }
 
-                float posY = transform.position.y - lastPos.y;
-                if(posY > 0)
-                {
-                    jumpFallFalg = true;
-                }
+                //   Debug.Log(vec);
+
+                Jump(); //ジャンプ
+
+                //最後の座標を入れる
+                lastPos = transform.position;
+
+                //if (Input.GetKeyDown(KeyCode.Q))
+                //{
+                //    SavePlayer.Save(this);
+                //}
             }
             else
             {
-                animator.SetBool("IsJump", false);
+               
             }
-
-         //   Debug.Log(vec);
-
-            Jump(); //ジャンプ
-
-            //最後の座標を入れる
-            lastPos = transform.position;
-
-            //if (Input.GetKeyDown(KeyCode.Q))
-            //{
-            //    SavePlayer.Save(this);
-            //}
-
         }
 
         //レアリティを奪う関数
@@ -262,7 +284,7 @@ namespace Momoya
 
         }
 
-   
+        
 
 
     }
