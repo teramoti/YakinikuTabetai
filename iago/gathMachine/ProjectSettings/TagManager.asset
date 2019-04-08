@@ -6,8 +6,12 @@ TagManager:
   tags:
   - Ground
   - Item
+<<<<<<< HEAD
   - DamageObject
   - Monster
+=======
+  - Goal
+>>>>>>> 6d693894b455b7c830bdaf47a0fda2d734147d98
   layers:
   - Default
   - TransparentFX
