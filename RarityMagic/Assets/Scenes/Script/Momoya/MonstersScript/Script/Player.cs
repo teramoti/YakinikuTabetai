@@ -66,6 +66,11 @@ namespace Momoya
 
             lastPos = transform.position;
 
+            //装備しているステータスの合計をステータスにする
+            for (int i = 0; i < (int)HaveItem.More; i++)
+            {
+                haveItem[i].SetStatus();
+            }
         }
 
         //Move関数
@@ -126,7 +131,7 @@ namespace Momoya
                 animator.SetBool("IsJump", false);
             }
 
-            Debug.Log(vec);
+         //   Debug.Log(vec);
 
             Jump(); //ジャンプ
 
@@ -226,6 +231,7 @@ namespace Momoya
         //アイテムの変更
         public void ChangeItem(Item item,int itemgroup)
         {
+            Destroy(haveItem[(int)itemgroup].gameObject);
             haveItem[(int)itemgroup] = item;
         }
 
@@ -249,6 +255,8 @@ namespace Momoya
             set { hitObject = value; }
 
         }
+
+   
 
 
     }

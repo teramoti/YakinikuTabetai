@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scenes\Script\GameObject\Goal.cs" />
     <Compile Include="Assets\Scenes\Script\GameObject\OneupStar.cs" />
     <Compile Include="Assets\Scenes\Script\Momoya\DataScript\SavePlayer.cs" />
+    <Compile Include="Assets\Scenes\Script\Momoya\ItemScript\Item\GeneLateItem.cs" />
     <Compile Include="Assets\Scenes\Script\Momoya\ItemScript\Item\Item.cs" />
     <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\bat.cs" />
     <Compile Include="Assets\Scenes\Script\Momoya\MonstersScript\Script\Monster.cs" />
