@@ -37,6 +37,7 @@ namespace Momoya
             Move = (1 << 0),  //移動フラグ
             Jump = (1 << 1),  //ジャンプフラグ
             Deth = (1 << 2),  //死亡フラグ
+            Goal = (1 << 3),  //ゴールフラグ
 
         }
 
@@ -137,6 +138,7 @@ namespace Momoya
             switch (collision.transform.tag)
             {
                 case "Ground": flag.On((uint)StateFlag.Jump);   break; //groundと触れていればジャンプフラグをtrueにする
+                case "Goal":flag.On((uint)StateFlag.Goal); break;
             }
 
            
