@@ -77,6 +77,10 @@ namespace Momoya
         //Move関数
         public override void Move()
         {
+            if(flag.Is((uint)StateFlag.Goal))
+            {
+                return;
+            }
             //アイテムのポジション設定
             SetItemPos();
             //プレイヤーレアリティ
