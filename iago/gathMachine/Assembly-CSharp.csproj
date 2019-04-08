@@ -68,10 +68,12 @@
     <Compile Include="Assets\Scenes\Momoya\MonstersScript\Script\Monster.cs" />
     <Compile Include="Assets\Scenes\Momoya\MonstersScript\Script\Player.cs" />
     <Compile Include="Assets\Scenes\Momoya\Object.cs" />
+    <Compile Include="Assets\Scenes\Momoya\result\CreateStar.cs" />
     <Compile Include="Assets\Scenes\Okumura\AutoTileMap.cs" />
     <Compile Include="Assets\Scenes\Okumura\EditorWindow.cs" />
     <Compile Include="Assets\Scenes\Okumura\TileMap.cs" />
     <Compile Include="Assets\Scenes\Okumura\TileMapEditor.cs" />
+    <Compile Include="Assets\Scenes\Teramoto\Title.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/iago/gathMachine/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -81,17 +83,17 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/iago/gathMachine/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/iago/gathMachine/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/iago/gathMachine/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/iago/gathMachine/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/iago/gathMachine/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/iago/gathMachine/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Users/s172091/Documents/YakinikuTabetai3/iago/gathMachine/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -650,14 +652,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VisualEffectGraph.Runtime.csproj">
-      <Project>{4F8C0FB4-7C30-2A40-A7DE-AFF6F0C1A5EC}</Project>
-      <Name>Unity.VisualEffectGraph.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualEffectGraph.Editor.csproj">
-      <Project>{0B447E6D-3290-78AD-37F7-7FBC4F266368}</Project>
-      <Name>Unity.VisualEffectGraph.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
       <Project>{CA00606D-7E32-A0E4-6460-C9ACDA81E61B}</Project>
       <Name>Unity.RenderPipelines.Core.Editor</Name>
@@ -665,6 +659,10 @@
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
       <Project>{3B4E7435-FC8C-8F7C-1B5C-A478738A1D60}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualEffectGraph.Runtime.csproj">
+      <Project>{4F8C0FB4-7C30-2A40-A7DE-AFF6F0C1A5EC}</Project>
+      <Name>Unity.VisualEffectGraph.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Lightweight.Runtime.csproj">
       <Project>{EDDCA85E-F710-ABDF-B5A3-56D68D78B8A0}</Project>
@@ -677,6 +675,10 @@
     <ProjectReference Include="Unity.RenderPipelines.HighDefinition.Runtime.csproj">
       <Project>{40F51916-FBC8-5BFB-D1B2-94F22FB4E101}</Project>
       <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualEffectGraph.Editor.csproj">
+      <Project>{0B447E6D-3290-78AD-37F7-7FBC4F266368}</Project>
+      <Name>Unity.VisualEffectGraph.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ShaderGraph.Editor.csproj">
       <Project>{D722210D-007C-AA00-0827-53A1D900CD98}</Project>
