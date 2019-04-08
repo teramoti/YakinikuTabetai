@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 //プレイヤーのスクリプト
 
 namespace Momoya
@@ -150,14 +151,14 @@ namespace Momoya
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (GetComponentInChildren<AttackZone>().HitFlag)
-                {
-                    //当たっているオブジェクトのレアリティを下げ自分のレアリティを上げる
-                    hitObject.gameObject.GetComponent<Object>().Rarity = hitObject.gameObject.GetComponent<Monster>().Rarity - 1;
-                    this.rarity += 1;
+                //if (GetComponentInChildren<AttackZone>().HitFlag)
+                //{
+                //    //当たっているオブジェクトのレアリティを下げ自分のレアリティを上げる
+                //    hitObject.gameObject.GetComponent<Object>().Rarity = hitObject.gameObject.GetComponent<Monster>().Rarity - 1;
+                //    this.rarity += 1;
 
 
-                }
+                //}
             }
         }
 
@@ -166,12 +167,12 @@ namespace Momoya
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
-                if (GetComponentInChildren<AttackZone>().HitFlag)
-                {
-                    //当たっているオブジェクトのレアリティを上げ自分のレアリティを下げる
-                    hitObject.gameObject.GetComponent<Monster>().Rarity = hitObject.gameObject.GetComponent<Monster>().Rarity + 1;
-                    this.rarity -= 1;
-                }
+                //if (GetComponentInChildren<AttackZone>().HitFlag)
+                //{
+                //    //当たっているオブジェクトのレアリティを上げ自分のレアリティを下げる
+                //    hitObject.gameObject.GetComponent<Monster>().Rarity = hitObject.gameObject.GetComponent<Monster>().Rarity + 1;
+                //    this.rarity -= 1;
+                //}
             }
         }
 
