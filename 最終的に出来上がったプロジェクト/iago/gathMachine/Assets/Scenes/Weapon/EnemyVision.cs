@@ -20,26 +20,23 @@ public class EnemyVision : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-
-        switch (other.transform.tag)
+        if(other.transform.tag == "Player")
         {
             //視界に入っている間
-            case "Player":
                 enemyController.VisionFlag = true;
                 playerPos = other.transform.position;
-                break;
         }
     }
 
     public void OnTriggerExit(Collider other)
     {
-        switch (other.transform.tag)
+        if (other.transform.tag == "Player")
         {
             //視界から出たら
-            case "Player":
+          
                 enemyController.VisionFlag = false;
 
-                break;
+              
         }
     }
 

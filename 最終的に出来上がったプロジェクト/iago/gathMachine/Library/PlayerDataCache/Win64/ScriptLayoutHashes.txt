@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/s172091/Desktop/YakinikuTabetai3 (2)/YakinikuTabetai3/iago/gathMachine/exe/gathMachine.exe
+C:/Users/s172137/Documents/YakinikuTabetai/最終的に出来上がったプロジェクト/iago/gathMachine/exe/gathMachine.exe
 SceneListBegin?
 Assets/Scenes/teramotoTeast.unity
 Assets/Scenes/Stagetest.unity
@@ -15,10 +15,10 @@ a1f19ad47d3094e235f21b74dfc423a8 Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 b13de7a0a457cb8e026d4237dc1b5797 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.LensDistortion
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 f8ee621b2e44efb35cf539348643782d Assembly-CSharp.dll:.IntroCameraController
+06a0871777ed7a45d4e799e14ef87e76 Assembly-CSharp.dll:.ResultGo
 8c328a0ffa03c1bcb9332bb39f4f8453 Unity.RenderPipelines.Core.Runtime.dll:UnityEngine.Experimental.Rendering.Volume
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.VisualEffectGraph.Runtime.dll:UnityEditor.VFX.SpawnOverDistance
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
-4aecbe79e4a3087aa5af17050c2ba0c2 Assembly-CSharp-Editor.dll:.AutoTileMap
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 780e8f682b3221346c034a6712a0fd25 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -175,6 +175,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 d96bc1ce9060c5c4be2fb472bd7c8098 Assembly-CSharp.dll:.StartController
 04561ab2e3fdef92bfee231b02af44b2 Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.HDPipeline.ScreenSpaceRefraction
 7e497500233400bf523fe2203756ae09 Assembly-CSharp.dll:.UnityChan2DController
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PlaySceneGo
 e1bbf0ab858085e38fae6b12ebbdcd35 Unity.VisualEffectGraph.Runtime.dll:.VisualEffectActivationTrack
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.DebugUpdater
 6977549dce8576b23ed89390dfc0c1eb Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.HDPipeline.VolumetricFog
@@ -249,6 +250,7 @@ a6c1ceb549e595076ba286f68c242075 Unity.RenderPipelines.HighDefinition.Runtime.dl
 6f8ad5fc86878c78235c4db9af18076b Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.HDPipeline.DensityVolume
 b9c6f7358c6c4a116c264d7c7f6f08b1 Unity.RenderPipelines.Lightweight.Runtime.dll:UnityEngine.Experimental.Rendering.LightweightPipeline.LightweightRenderPipelineEditorResources
 7a7e4422763e5f66bcb3cf2acf4f1a06 Assembly-CSharp.dll:Momoya.Player
+aef9386513e10c2b58b4c2172faf4e3c Assembly-CSharp.dll:.RaritySave
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 f69dfc6409fbbd89d3689368e99688a8 Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.UI.DebugUIHandlerVector2
@@ -296,6 +298,3 @@ ea97d2d1ef37a085a6917f09bf3daa13 Assembly-CSharp.dll:.GunController
 60f1b089e372e35bead61a4d8a712d27 Unity.VisualEffectGraph.Runtime.dll:UnityEngine.VFX.Utils.VFXSphereBinder
 2388eb9e99b86b3813e7b6dbfe4b3e0c Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.UI.DebugUIHandlerContainer
 8d35f16c5022311c6f4d9432be73bfcf Unity.RenderPipelines.HighDefinition.Runtime.dll:UnityEngine.Experimental.Rendering.UI.DebugUIHandlerIndirectFloatField
-06a0871777ed7a45d4e799e14ef87e76 Assembly-CSharp.dll:.ResultGo
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PlaySceneGo
-aef9386513e10c2b58b4c2172faf4e3c Assembly-CSharp.dll:.RaritySave

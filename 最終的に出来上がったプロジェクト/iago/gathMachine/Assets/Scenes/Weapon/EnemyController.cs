@@ -107,22 +107,22 @@ public class EnemyController : Momoya.Monster
     private void Loiter()
     {
         //右の地面判定
-        if (!Physics.Linecast(new Vector3(transform.position.x + 1, transform.position.y, 0), new Vector3(transform.position.x + 1, transform.position.y - 2, 0), layerMask))
+        if (!Physics.Linecast(new Vector3(transform.position.x + 1, transform.position.y, 0), new Vector3(transform.position.x + 1, transform.position.y - 1, 0), layerMask))
         {
             vec.x = -1;
         }
         //左の地面判定
-        if (!Physics.Linecast(new Vector3(transform.position.x - 1, transform.position.y, 0), new Vector3(transform.position.x - 1, transform.position.y - 2, 0), layerMask))
+        if (!Physics.Linecast(new Vector3(transform.position.x - 1, transform.position.y, 0), new Vector3(transform.position.x - 1, transform.position.y - 1, 0), layerMask))
         {
             vec.x = 1;
         }
         //右の地面判定
-        if (Physics.Linecast(new Vector3(transform.position.x, transform.position.y, 0), new Vector3(transform.position.x + 2, transform.position.y, 0), layerMask))
+        if (Physics.Linecast(new Vector3(transform.position.x, transform.position.y, 0), new Vector3(transform.position.x + 1, transform.position.y, 0), layerMask))
         {
             vec.x = -1;
         }
         //左の地面判定
-        if (Physics.Linecast(new Vector3(transform.position.x, transform.position.y, 0), new Vector3(transform.position.x - 2, transform.position.y, 0), layerMask))
+        if (Physics.Linecast(new Vector3(transform.position.x, transform.position.y, 0), new Vector3(transform.position.x - 1, transform.position.y, 0), layerMask))
         {
             vec.x = 1;
         }

@@ -21,13 +21,14 @@ public class EnemyAttackZone : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        switch (other.transform.tag)
+        if (other.transform.tag == "Player")
         {
-            //攻撃範囲に入ったら
-            case "Player":
+            {
+                //攻撃範囲に入ったら
+
                 enemyController.AttackFlag = true;
                 playerPos = other.transform.position;
-                break;
+            }  
         }
     }
 
