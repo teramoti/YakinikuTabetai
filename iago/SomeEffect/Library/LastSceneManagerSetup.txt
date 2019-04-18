@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Somes/Frame/Frame.unity
+  isLoaded: 1
+  isActive: 1
