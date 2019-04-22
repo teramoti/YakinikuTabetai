@@ -1,47 +1,195 @@
 Base path: C:/Program Files/Unity/Hub/Editor/2018.3.6f1/Editor/Data
 Cmd: initializeCompiler
 Cmd: preprocessCompute
-  insize=6446 outsize=6448 ok=1
+  insize=5562 outsize=5564 ok=1
 Cmd: preprocessCompute
-  insize=7279 outsize=7281 ok=1
+  insize=5554 outsize=5556 ok=1
 Cmd: preprocess
-  insize=10728 outsize=416 ok=1
+  insize=18609 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: preprocessCompute
+  insize=5520 outsize=5522 ok=1
+Cmd: preprocessCompute
+  insize=5540 outsize=5542 ok=1
+Cmd: preprocess
+  insize=19086 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
 Cmd: initializeCompiler
 Cmd: preprocessCompute
+  insize=5562 outsize=5564 ok=1
+Cmd: preprocessCompute
+  insize=5554 outsize=5556 ok=1
+Cmd: preprocess
+  insize=18609 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: preprocessCompute
+  insize=5520 outsize=5522 ok=1
+Cmd: preprocessCompute
+  insize=5540 outsize=5542 ok=1
+Cmd: preprocess
+  insize=19086 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=5562 outsize=5564 ok=1
+Cmd: preprocessCompute
+  insize=5554 outsize=5556 ok=1
+Cmd: preprocess
+  insize=18609 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: preprocessCompute
+  insize=5520 outsize=5522 ok=1
+Cmd: preprocessCompute
+  insize=5540 outsize=5542 ok=1
+Cmd: preprocess
+  insize=19086 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: preprocessCompute
+  insize=5477 outsize=5479 ok=1
+Cmd: preprocessCompute
+  insize=4878 outsize=4880 ok=1
+Cmd: preprocess
+  insize=10593 outsize=416 ok=1
+Cmd: preprocessCompute
+  insize=5477 outsize=5479 ok=1
+Cmd: preprocessCompute
+  insize=4878 outsize=4880 ok=1
+Cmd: preprocess
+  insize=10593 outsize=416 ok=1
+Cmd: preprocessCompute
+  insize=5477 outsize=5479 ok=1
+Cmd: preprocessCompute
+  insize=4878 outsize=4880 ok=1
+Cmd: preprocess
+  insize=10593 outsize=416 ok=1
+Cmd: preprocessCompute
+  insize=5283 outsize=5285 ok=1
+Cmd: preprocessCompute
+  insize=4905 outsize=4907 ok=1
+Cmd: preprocess
+  insize=10591 outsize=415 ok=1
+Cmd: preprocessCompute
   insize=6493 outsize=6495 ok=1
 Cmd: preprocessCompute
   insize=7324 outsize=7326 ok=1
+Cmd: preprocess
+  insize=10728 outsize=416 ok=1
+Cmd: preprocessCompute
+  insize=6446 outsize=6448 ok=1
+Cmd: preprocessCompute
+  insize=7279 outsize=7281 ok=1
+Cmd: preprocess
+  insize=10728 outsize=416 ok=1
+Cmd: preprocessCompute
+  insize=5283 outsize=5285 ok=1
+Cmd: preprocessCompute
+  insize=4905 outsize=4907 ok=1
+Cmd: preprocess
+  insize=10591 outsize=415 ok=1
+Cmd: preprocessCompute
+  insize=6446 outsize=6448 ok=1
+Cmd: preprocessCompute
+  insize=7279 outsize=7281 ok=1
+Cmd: preprocess
+  insize=10728 outsize=416 ok=1
+Cmd: preprocessCompute
+  insize=5520 outsize=5522 ok=1
+Cmd: preprocessCompute
+  insize=5540 outsize=5542 ok=1
+Cmd: preprocess
+  insize=19086 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: preprocessCompute
+  insize=7508 outsize=7510 ok=1
+Cmd: preprocessCompute
+  insize=4155 outsize=4157 ok=1
+Cmd: preprocess
+  insize=10288 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: preprocessCompute
+  insize=7224 outsize=7226 ok=1
+Cmd: preprocessCompute
+  insize=4150 outsize=4152 ok=1
+Cmd: preprocess
+  insize=10288 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=7508 outsize=7510 ok=1
+Cmd: preprocessCompute
+  insize=4155 outsize=4157 ok=1
+Cmd: preprocess
+  insize=10288 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: preprocessCompute
+  insize=7224 outsize=7226 ok=1
+Cmd: preprocessCompute
+  insize=4150 outsize=4152 ok=1
+Cmd: preprocess
+  insize=10288 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: preprocessCompute
+  insize=7508 outsize=7510 ok=1
+Cmd: preprocessCompute
+  insize=4155 outsize=4157 ok=1
+Cmd: preprocess
+  insize=10288 outsize=429 ok=1
+Cmd: preprocessCompute
+  insize=1564 outsize=1566 ok=1
+Cmd: preprocessCompute
+  insize=7508 outsize=7510 ok=1
+Cmd: preprocessCompute
+  insize=4155 outsize=4157 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=7326 outsize=9953 ok=1
+  api=4 insize=4157 outsize=1773 ok=1
 Cmd: preprocess
-  insize=10728 outsize=416 ok=1
+  insize=10288 outsize=428 ok=1
+Cmd: compileSnippet
+  error: 1 plat 4 at Packages/com.unity.render-pipelines.core/ShaderLibrary/API/D3D11.hlsl(112): 'SAMPLE_DEPTH_TEXTURE' : macro redefinition\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
+  error: 1 plat 4 at Packages/com.unity.render-pipelines.core/ShaderLibrary/API/D3D11.hlsl(113): 'SAMPLE_DEPTH_TEXTURE_LOD' : macro redefinition\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
+  api=4 type=0 insize=10195 outsize=3710 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  error: 1 plat 4 at Packages/com.unity.render-pipelines.core/ShaderLibrary/API/D3D11.hlsl(112): 'SAMPLE_DEPTH_TEXTURE' : macro redefinition\nCompiling Fragment program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
+  error: 1 plat 4 at Packages/com.unity.render-pipelines.core/ShaderLibrary/API/D3D11.hlsl(113): 'SAMPLE_DEPTH_TEXTURE_LOD' : macro redefinition\nCompiling Fragment program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
+  api=4 type=1 insize=10195 outsize=5910 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
 Cmd: preprocessCompute
-  insize=6493 outsize=6495 ok=1
+  insize=1564 outsize=1566 ok=1
 Cmd: preprocessCompute
-  insize=7324 outsize=7326 ok=1
+  insize=7508 outsize=7510 ok=1
+Cmd: preprocessCompute
+  insize=4155 outsize=4157 ok=1
 Cmd: preprocess
-  insize=10728 outsize=416 ok=1
+  insize=10288 outsize=429 ok=1
 Cmd: preprocessCompute
-  insize=6493 outsize=6495 ok=1
+  insize=1564 outsize=1566 ok=1
 Cmd: preprocessCompute
-  insize=7324 outsize=7326 ok=1
+  insize=7224 outsize=7226 ok=1
+Cmd: preprocessCompute
+  insize=4150 outsize=4152 ok=1
 Cmd: preprocess
-  insize=10728 outsize=416 ok=1
+  insize=10288 outsize=429 ok=1
 Cmd: preprocessCompute
-  insize=6493 outsize=6495 ok=1
+  insize=1564 outsize=1566 ok=1
 Cmd: preprocessCompute
-  insize=7324 outsize=7326 ok=1
+  insize=7224 outsize=7226 ok=1
+Cmd: preprocessCompute
+  insize=4150 outsize=4152 ok=1
 Cmd: preprocess
-  insize=10728 outsize=416 ok=1
+  insize=10288 outsize=429 ok=1
 Cmd: preprocessCompute
-  insize=6446 outsize=6448 ok=1
-Cmd: preprocessCompute
-  insize=7279 outsize=7281 ok=1
-Cmd: preprocess
-  insize=10728 outsize=416 ok=1
-Cmd: preprocessCompute
-  insize=6446 outsize=6448 ok=1
-Cmd: preprocessCompute
-  insize=7279 outsize=7281 ok=1
-Cmd: preprocess
-  insize=10728 outsize=416 ok=1
+  insize=1564 outsize=1566 ok=1
