@@ -311,6 +311,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\Script\AttackZone.cs" />
+    <Compile Include="Assets\Scenes\Script\BulletController.cs" />
     <Compile Include="Assets\Scenes\Script\GameObject\GameObject.cs" />
     <Compile Include="Assets\Scenes\Script\GameObject\Goal.cs" />
     <Compile Include="Assets\Scenes\Script\GameObject\OneupStar.cs" />
